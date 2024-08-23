@@ -68,15 +68,18 @@ export default function Home() {
   }, [isMobile]);
 
   return (
-    <div className="relative flex items-center justify-around w-full h-full px-16 mx-auto overflow-hidden">
+    <div className="relative flex items-center justify-center w-full h-full px-16 mx-auto overflow-hidden border-2 lg:justify-around">
       {!isMobile && (
         <div ref={grid} className="absolute inset-0 p-6">
           <Boxes className="absolute inset-0" />
         </div>
       )}
-      <div className="flex-grow" ref={namePanel}>
-        <h1 className="text-6xl">
-          My name is:{" "}
+
+      <div className="flex-grow px-5 lg:px-0" ref={namePanel}>
+        <h1 className="text-3xl lg:text-6xl">
+          <span className="text-xl">Hi!👋</span>
+          <br />
+          <span className="lg:-ml-1">My name is: </span>
           {!isMobile ? (
             <span ref={myName} className="overflow-hidden">
               {"Hamza Lomari".split("").map((char, idx) => (
@@ -86,18 +89,22 @@ export default function Home() {
               ))}
             </span>
           ) : (
-            <span className="inline-block whitespace-pre">Hamza Lomari</span>
+            <span className="inline-block whitespace-pre font-bold text-4xl lg:text-6xl lg:font-normal">
+              Hamza Lomari
+            </span>
           )}
         </h1>
-        <p className="text-2xl whitespace-pre">Creative front-end developer.</p>
+        <p className="text-lg italic whitespace-pre lg:not-italic lg:text-2xl">
+          Creative front-end developer.{" "}
+          {isMobile && <span className="not-italic">{"<😎/>"}</span>}
+        </p>
       </div>
+
       <div className="z-50 w-1/3">
-        {!isMobile ? (
+        {!isMobile && (
           <h2 className="text-9xl" ref={emoji}>
             {"<😎/>"}
           </h2>
-        ) : (
-          <h2 className="text-9xl">{"<😎/>"}</h2>
         )}
       </div>
     </div>

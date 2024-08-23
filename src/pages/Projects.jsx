@@ -6,54 +6,55 @@ export default function Projects() {
           My Projects
         </h2>
       </div>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="overflow-hidden rounded-lg shadow-lg">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 *:overflow-hidden *:rounded-lg *:shadow-lg *:border-2">
+        <div>
           <a href="#" className="block" prefetch={false}>
             <img
-              src="/placeholder.svg"
+              src="/Shutapp_2.gif"
               width={600}
               height={400}
-              alt="Project 1"
-              className="object-cover w-full h-48"
-              style={{ aspectRatio: "600/400", objectFit: "cover" }}
+              alt="SHUTapp!"
+              className="w-full h-48"
+              style={{ aspectRatio: "600/400", objectFit: "fill" }}
             />
           </a>
           <div className="p-4 bg-background">
             <h3 className="mb-2 text-lg font-semibold">
               <a href="#" className="hover:underline" prefetch={false}>
-                Project 1
+                SHUTapp!
               </a>
             </h3>
             <p className="mb-4 text-sm text-muted-foreground">
-              A brief description of Project 1.
+              A Full-Stack web chat application built using NextJS, Prisma,
+              Supabase and Bun.
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://shut-app.vercel.app/"
                 className="text-sm font-medium text-primary hover:underline"
                 prefetch={false}
               >
-                Live Site
+                Live App
               </a>
               <a
-                href="#"
+                href="https://github.com/LomariPortfolio/SHUTApp"
                 className="text-sm font-medium text-primary hover:underline"
                 prefetch={false}
               >
-                GitHub
+                Source code
               </a>
             </div>
           </div>
         </div>
-        <div className="overflow-hidden rounded-lg shadow-lg">
+        <div>
           <a href="#" className="block" prefetch={false}>
             <img
               src="/placeholder.svg"
               width={600}
               height={400}
               alt="Project 2"
-              className="object-cover w-full h-48"
-              style={{ aspectRatio: "600/400", objectFit: "cover" }}
+              className="w-full h-48"
+              style={{ aspectRatio: "600/400", objectFit: "fill" }}
             />
           </a>
           <div className="p-4 bg-background">
@@ -83,15 +84,15 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="overflow-hidden rounded-lg shadow-lg">
+        <div>
           <a href="#" className="block" prefetch={false}>
             <img
               src="/placeholder.svg"
               width={600}
               height={400}
               alt="Project 3"
-              className="object-cover w-full h-48"
-              style={{ aspectRatio: "600/400", objectFit: "cover" }}
+              className="w-full h-48"
+              style={{ aspectRatio: "600/400", objectFit: "fill" }}
             />
           </a>
           <div className="p-4 bg-background">
