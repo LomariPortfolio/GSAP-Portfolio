@@ -68,7 +68,7 @@ export default function Home() {
   }, [isMobile]);
 
   return (
-    <div className="relative flex items-center justify-center w-full h-full px-16 mx-auto overflow-hidden border-2 lg:justify-around">
+    <div className="relative flex items-center justify-center w-full h-full px-16 mx-auto overflow-hidden lg:justify-around">
       {!isMobile && (
         <div ref={grid} className="absolute inset-0 p-6">
           <Boxes className="absolute inset-0" />
@@ -89,7 +89,7 @@ export default function Home() {
               ))}
             </span>
           ) : (
-            <span className="inline-block whitespace-pre font-bold text-4xl lg:text-6xl lg:font-normal">
+            <span className="inline-block text-4xl font-bold whitespace-pre lg:text-6xl lg:font-normal">
               Hamza Lomari
             </span>
           )}

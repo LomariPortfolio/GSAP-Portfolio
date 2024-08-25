@@ -14,6 +14,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Button } from "./components/ui/button";
+import AboutMe from "./pages/AboutMe";
 
 export default function App() {
   const isMobile = IsMobile();
@@ -21,7 +22,7 @@ export default function App() {
     <div className="flex items-center justify-center w-screen h-screen">
       <Tabs
         defaultValue="Home"
-        className="relative z-50 flex flex-col items-center justify-between w-5/6 border-2 rounded-md h-5/6"
+        className="relative z-50 flex flex-col items-center justify-between w-5/6 border-2 rounded-md h-5/6 overflow-x-hidden overflow-y-auto"
       >
         {!isMobile ? (
           <div className="absolute z-50 flex items-center justify-between w-full px-24">
@@ -66,14 +67,16 @@ export default function App() {
             </DrawerContent>
           </Drawer>
         )}
-        <div className="flex-1 w-full border-blue-800 *:w-full *:h-full overflow-y-auto">
+        <div className="flex-1 w-full border-blue-800 *:w-full *:h-full">
           <TabsContent value="Home">
             <Home />
           </TabsContent>
           <TabsContent value="Projects">
             <Projects />
           </TabsContent>
-          <TabsContent value="AboutMe">About me</TabsContent>
+          <TabsContent value="AboutMe">
+            <AboutMe />
+          </TabsContent>
           <TabsContent value="ContactMe">Contact me</TabsContent>
         </div>
       </Tabs>
