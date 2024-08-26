@@ -22,7 +22,7 @@ export default function App() {
     <div className="flex items-center justify-center w-screen h-screen">
       <Tabs
         defaultValue="Home"
-        className="relative z-50 flex flex-col items-center justify-between w-5/6 border-2 rounded-md h-5/6 overflow-x-hidden overflow-y-auto"
+        className="relative z-50 flex flex-col items-center justify-between w-5/6 overflow-x-hidden overflow-y-auto border-2 rounded-md h-5/6"
       >
         {!isMobile ? (
           <div className="absolute z-50 flex items-center justify-between w-full px-24">
@@ -31,7 +31,6 @@ export default function App() {
                 <TabsTrigger value="Home">Home</TabsTrigger>
                 <TabsTrigger value="Projects">Projects</TabsTrigger>
                 <TabsTrigger value="AboutMe">About me</TabsTrigger>
-                <TabsTrigger value="ContactMe">Contact me</TabsTrigger>
               </TabsList>
             </div>
             <ModeToggle />
@@ -55,9 +54,6 @@ export default function App() {
                   <Button variant="outline">
                     <TabsTrigger value="AboutMe">About me</TabsTrigger>
                   </Button>
-                  <Button variant="outline">
-                    <TabsTrigger value="ContactMe">Contact me</TabsTrigger>
-                  </Button>
                   <ModeToggle />
                 </TabsList>
                 <DrawerClose>
@@ -77,7 +73,6 @@ export default function App() {
           <TabsContent value="AboutMe">
             <AboutMe />
           </TabsContent>
-          <TabsContent value="ContactMe">Contact me</TabsContent>
         </div>
       </Tabs>
     </div>
