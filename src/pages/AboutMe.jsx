@@ -9,11 +9,11 @@ export default function AboutMe() {
       <div className="max-w-3xl mx-auto">
         <div className="mb-12 text-center">
           <img
-            src="/placeholder.svg?height=150&width=150"
+            src="/pfp.webp?height=150&width=150"
             alt="Your Name"
             width={150}
             height={150}
-            className="mx-auto rounded-full"
+            className="mx-auto rounded-full w-48 h-48 object-cover overflow-hidden"
           />
           <h1 className="mt-4 text-4xl font-bold">Hamza Lomari</h1>
           <p className="mt-2 text-xl text-muted-foreground">
@@ -94,9 +94,9 @@ export default function AboutMe() {
                 <p>Baccalaureate in Physical science - French option</p>
               </li>
               <li>
-                <h3 className="text-lg font-semibold">OFPPT</h3>
+                <h3 className="text-lg font-semibold">Cité de Métiers et des Compétences - RSK</h3>
                 <p className="text-muted-foreground">2023 - 2025</p>
-                <p>Digital Infrastructure</p>
+                <p>Digital Infrastructure - CyberSecurity Option</p>
               </li>
             </ul>
           </CardContent>
