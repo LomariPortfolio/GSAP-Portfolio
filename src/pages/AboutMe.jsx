@@ -5,7 +5,7 @@ import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
 
 export default function AboutMe() {
   return (
-    <div className="min-h-screen px-4 py-12 bg-background text-foreground sm:px-6 lg:px-8">
+    <div className="min-h-screen px-4 py-12 bg-background text-foreground sm:px-6 lg:px-8 custom-scrollbar">
       <div className="max-w-3xl mx-auto">
         <div className="mb-12 text-center">
           <img
@@ -13,7 +13,7 @@ export default function AboutMe() {
             alt="Your Name"
             width={150}
             height={150}
-            className="mx-auto rounded-full w-48 h-48 object-cover overflow-hidden"
+            className="object-cover w-48 h-48 mx-auto overflow-hidden rounded-full"
           />
           <h1 className="mt-4 text-4xl font-bold">Hamza Lomari</h1>
           <p className="mt-2 text-xl text-muted-foreground">
