@@ -25,7 +25,7 @@ export default function App() {
         className="relative z-50 flex flex-col items-center justify-between w-5/6 overflow-x-hidden overflow-y-auto border-2 rounded-md h-5/6"
       >
         {!isMobile ? (
-          <div className="absolute z-50 flex items-center justify-between w-full px-24">
+          <div className="fixed top-50 left-0 right-0 flex items-center justify-between w-full px-48 z-[9999]">
             <div className="flex justify-center flex-grow">
               <TabsList>
                 <TabsTrigger value="Home">Home</TabsTrigger>

@@ -5,7 +5,7 @@ import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
 
 export default function AboutMe() {
   return (
-    <div className="min-h-screen px-4 py-12 bg-background text-foreground sm:px-6 lg:px-8">
+    <div className="min-h-screen px-4 py-12 bg-background text-foreground sm:px-6 lg:px-8 custom-scrollbar">
       <div className="max-w-3xl mx-auto">
         <div className="mb-12 text-center">
           <img
