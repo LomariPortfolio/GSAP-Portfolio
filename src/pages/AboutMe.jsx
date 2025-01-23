@@ -13,7 +13,7 @@ export default function AboutMe() {
             alt="Your Name"
             width={150}
             height={150}
-            className="mx-auto rounded-full w-48 h-48 object-cover overflow-hidden"
+            className="object-cover w-48 h-48 mx-auto overflow-hidden rounded-full"
           />
           <h1 className="mt-4 text-4xl font-bold">Hamza Lomari</h1>
           <p className="mt-2 text-xl text-muted-foreground">
@@ -111,7 +111,7 @@ export default function AboutMe() {
                 <span className="sr-only">GitHub</span>
               </Button>
             </a>
-            <a href="http://">
+            <a href="https://www.linkedin.com/in/The0mari/">
               <Button variant="outline" size="icon">
                 <LinkedinIcon className="w-5 h-5" />
                 <span className="sr-only">LinkedIn</span>

@@ -81,7 +81,7 @@ export default function Home() {
           <br />
           <span className="lg:-ml-1">My name is: </span>
           {!isMobile ? (
-            <span ref={myName} className="overflow-hidden">
+            <span ref={myName} className="overflow-hidden whitespace-nowrap">
               {"Hamza Lomari".split("").map((char, idx) => (
                 <span key={idx} className="inline-block whitespace-pre">
                   {char}
@@ -94,15 +94,15 @@ export default function Home() {
             </span>
           )}
         </h1>
-        <p className="text-lg italic whitespace-pre lg:not-italic lg:text-2xl">
+        <p className="text-lg italic lg:not-italic lg:text-2xl">
           Creative front-end developer.{" "}
-          {isMobile && <span className="not-italic">{"<😎/>"}</span>}
+          {isMobile && <span className="not-italic whitespace-nowrap">{"<😎/>"}</span>}
         </p>
       </div>
 
       <div className="z-50 w-1/3">
         {!isMobile && (
-          <h2 className="text-9xl" ref={emoji}>
+          <h2 className="text-9xl whitespace-nowrap" ref={emoji}>
             {"<😎/>"}
           </h2>
         )}
